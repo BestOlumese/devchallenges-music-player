@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="music-box">
+        <div class="img-container">
+            <img src="" id="coverImage" alt="">
+        </div>
+        <div class="text-container">
+            <h1 id="title"></h1>
+            <p id="subtitle"></p>
+        </div>
+        <div class="progress-div">
+            <div class="duration-row">
+                <p id="currentTime">02:23</p>
+                <p id="duration"></p>
+            </div>
+            <div class="progress-bar" id="mainProgress">
+                <div class="progress-subbar" id="progressBar"></div>
+            </div>
+        </div>
+        <audio id="audio">
+            <source src="assets/lost-in-city-lights-145038.mp3" type="audio/mpeg">
+        </audio>
+        <div class="controls">
+            <img src="assets/Stop_and_play_fill-1.svg" id="prev" alt="">
+            <img src="assets/Play_fill.svg" class="active play" id="play" alt="">
+            <img src="assets/Stop_and_play_fill.svg" id="next" alt="">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
